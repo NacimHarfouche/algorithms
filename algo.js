@@ -28,12 +28,10 @@ function addZ(chaine) {
  * If the 2 numbers are equal, return one of them.
  */
 function biggest(n1, n2) {
-	if (n1 < n2) {
-		return n2;
-	} else if (n1 === n2) {
+	if (n1 >= n2) {
 		return n1;
 	}
-	return n1;
+	return n2;
 }
 
 /**
@@ -42,10 +40,9 @@ function biggest(n1, n2) {
  */
 function bigWord(string1, string2) {
 	if (string1.length >= string2.length) {
-		 return string1;
-	} else {
-		return string2;
+		return string1;
 	}
+	return string2;
 }
 
 /**
@@ -54,9 +51,7 @@ function bigWord(string1, string2) {
  * The function will have to return the salary of the employee prefixed with '£'.
  */
 function prime(paie, boleen) {
-	if (boleen) {
-		paie = paie * 10;
-	}
+	if (boleen) paie *= 10;
 	return `£${paie}`;
 }
 
