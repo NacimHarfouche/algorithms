@@ -28,9 +28,7 @@ function addZ(chaine) {
  * If the 2 numbers are equal, return one of them.
  */
 function biggest(n1, n2) {
-	if (n1 >= n2) {
-		return n1;
-	}
+	if (n1 >= n2) return n1;
 	return n2;
 }
 
@@ -39,9 +37,7 @@ function biggest(n1, n2) {
  * If the length of the two strings are identical, the function will have to return the first one.
  */
 function bigWord(string1, string2) {
-	if (string1.length >= string2.length) {
-		return string1;
-	}
+	if (string1.length >= string2.length) return string1;
 	return string2;
 }
 
@@ -62,9 +58,8 @@ function prime(paie, boleen) {
  */
 function populate(nb) {
 	let array = [];
-	for (let i = 0; i < nb; i++) {
+	for (let i = 0; i < nb; i++)
 		array.push(i);
-	}
 	return array;
 }
 
@@ -75,11 +70,8 @@ function populate(nb) {
  */
 function nbDiviseur(nb) {
 	let reponse = 0;
-	for (let i = 1; i <= nb; i++) {
-		if ((nb % i) === 0) {
-			reponse++;
-		}
-	}
+	for (let i = 1; i <= nb; i++)
+		if ((nb % i) === 0) reponse++;
 	return reponse;
 }
 
@@ -99,8 +91,7 @@ function unscrambled(string) {
  */
 function mirror(string) {
 	let word = "";
-	for (let i = string.length - 1; i >= 0; i--) {
+	for (let i = string.length - 1; i >= 0; i--)
 		word += string[i];
-	}
 	return word;
 }
